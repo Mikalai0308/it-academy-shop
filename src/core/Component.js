@@ -20,7 +20,7 @@ export class Component extends HTMLElement {
 
   attributeChangedCallback(name, oldValue, newValue) {
     this.componentWillUpdate(name, oldValue, newValue);
-    this.getAttributeNS().forEach((attributeName) => {
+    this.getAttributeNames().forEach((attributeName) => {
       this.props[attributeName] = this.getAttribute(attributeName);
     });
   }
