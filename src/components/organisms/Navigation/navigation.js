@@ -1,5 +1,4 @@
 import { appPages } from '../../../constans/appPages';
-import { APP_ROUTES } from '../../../constans/appRoutes';
 import { routes } from '../../../constans/routes';
 import { Component } from '../../../core/Component';
 import '../../molecules/MenuItems';
@@ -19,7 +18,6 @@ class Navigation extends Component {
           active-item='${JSON.stringify(this?.activeItem)}'
           > 
           </it-menu-items> 
-
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link position-relative" href="#">
