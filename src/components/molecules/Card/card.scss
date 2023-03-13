@@ -1,0 +1,15 @@
+@import '../../../scss/mixin.scss';
+
+.fix-number-of-description {
+    @include sliceByLine;
+    min-height: 72px;
+};
+
+.fix-number-of-title {
+    @include sliceByLine(2);
+    min-height: 48px;
+};
+
+
+
+
